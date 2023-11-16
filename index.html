@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h2 class="form-head">registration Form</h2>
+      <form class="ref-form">
+        <label class="form-label">
+          <span class="label-caption">First name:</span>
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            placeholder="name"
+            minlength="2"
+            maxlength="20"
+            pattern="[A-Z][a-z](1,19)"
+            required
+            autofocus
+            tabindex="1"
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Last name:</span>
+          <input
+            class="form-input"
+            type="text"
+            name="surname"
+            placeholder="Surname"
+            minlength="2"
+            maxlength="20"
+            pattern="[A-Z][a-z](1,19)"
+            required
+            tabindex="2"
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Email:</span>
+          <input
+            class="form-input"
+            type="email"
+            name="user-email"
+            placeholder="user@mail.com"
+            required
+            tabindex="3"
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Phone number:</span>
+          <input
+            class="form-input"
+            type="tel"
+            name="user-phone"
+            pattern="\d{3}-\d{3}-\d{4}"
+            placeholder="098-765-4321"
+            required
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Password</span>
+          <input
+            class="form-input"
+            type="password"
+            name="user-password"
+            minlength="6"
+            maxlength="20"
+            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*).{6,20}"
+            required
+          />
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Password confirmation:</span>
+          <input
+            class="form-input"
+            type="password"
+            name="password-conf"
+            minlength="6"
+            maxlength="20"
+            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*).{6,20}"
+            required
+          />
+        </label>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </main>
+  </body>
+</html>
