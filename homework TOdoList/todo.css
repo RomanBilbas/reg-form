@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat;
+  background-size: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgK5-sci-zYDXQJJqBzo1K9DO9EGqCNkEfYA&usqp=CAU);
+}
+main {
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  min-width: 420px;
+  margin: 10px;
+  background: no-repeat;
+  background-size: 100%;
+  background-image: url(https://img.freepik.com/premium-photo/beautiful-3d-green-wavy-twisted-shape-abstract-background-wallpaper_272415-481.jpg);
+}
+
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+.select {
+  width: 50%;
+}
+.form-label {
+  gap: 10px;
+}
+.number {
+  width: 73%;
+}
+.Name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 25%;
+}
+.inputName {
+  width: 35.5%;
+}
+input {
+  width: 73%;
+}
+
+.valid {
+  border: 1px solid green;
+  background-color: aquamarine;
+}
+.invalid {
+  border: 1px solid red;
+  background-color: lightcoral;
+}

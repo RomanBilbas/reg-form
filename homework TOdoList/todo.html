@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./todo.css" />
+    <script defer src="./todo.js"></script>
+  </head>
+  <body>
+    <main>
+      <form class="form-head">
+        <h2 class="name-Form">Contact Form</h2>
+        <h3>
+          Please fill in your information and we`ll be sending your order.
+        </h3>
+        <label class="form-label">
+          <span class="Name"> Your Name </span>
+          <input
+            class="inputName"
+            type="text"
+            name="user-name"
+            placeholder="name"
+            minlength="2"
+            maxlength="15"
+            tabindex="1"
+          />
+          <input
+            class="inputName"
+            type="text"
+            name="sur-name"
+            placeholder="sur-name"
+            minlength="2"
+            maxlength="15"
+            tabindex="2"
+          />
+        </label>
+        <label class="form-label">
+          <span class="email"> email </span>
+          <input
+            type="email"
+            name="user-email"
+            placeholder="email"
+            minlength="2"
+            maxlength="15"
+            tabindex="3"
+          />
+        </label>
+        <label class="form-label">
+          <span class="Phone"> Phone* </span>
+          <input
+            class="number"
+            type="tel"
+            name="user-tel"
+            placeholder="Phone number"
+            minlength="3"
+            maxlength="13"
+            tabindex="4"
+          />
+        </label>
+        <label class="form-label">
+          <span class="subject"> Message subject* </span>
+          <select name="select">
+            <option value="value1">Father</option>
+            <option value="value2" selected>Mother</option>
+            <option value="value3">Brother</option>
+          </select>
+        </label>
+        <label class="form-label">
+          <span class="message"> Message </span>
+          <textarea class="story" name="story" rows="5" cols="130">
+            Write message
+            </textarea
+          >
+        </label>
+        <button type="submit" class="submit-btn">Sumbit Form</button>
+      </form>
+    </main>
+  </body>
+</html>
